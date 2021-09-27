@@ -20,7 +20,7 @@ class ProdRepoTest {
         repo.save(third);
         repo.save(forth);
 
-        repo.removedById(1);
+        repo.removedById(10);
 
 
     }

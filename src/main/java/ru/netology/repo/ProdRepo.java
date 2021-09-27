@@ -31,4 +31,15 @@ public class ProdRepo {
         }
         items = tmp;
     }
+
+    public Product findById(int id) {
+        Product tmp = new Product();
+        for (Product item : items) {
+            if (item.getId() == id) {
+                tmp = item;
+            }
+        }
+        return tmp;
+    }
+
 }
